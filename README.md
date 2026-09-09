@@ -46,7 +46,7 @@ A production-oriented marketplace designed around **multiple user portals, backe
 
 **Architecture**
 
-`Nx Monorepo` → `API Gateway` → `Domain Services` → `PostgreSQL / Redis / Kafka`
+`Nx Monorepo` → `API Gateway` → `Domain Services` → `MongoDB / Redis / Kafka`
 
 **Highlights**
 
@@ -185,7 +185,7 @@ while deepening my knowledge of **distributed systems, backend architecture and 
 
 📧 **[kajevic18@gmail.com](mailto:kajevic18@gmail.com)**
 
-💼 **[LinkedIn](https://www.linkedin.com/)**
+💼 **[LinkedIn](https://www.linkedin.com/in/amar-k-0341a81b0/)**
 
 ---
 
