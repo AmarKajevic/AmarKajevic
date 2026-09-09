@@ -1,188 +1,196 @@
 # Amar Kajevic
 
-### Full-Stack Software Engineer · TypeScript · React · Node.js
+### Full-Stack Software Engineer
 
-> I build systems that are meant to **work in production, not just pass the demo**.
+**TypeScript · React · Next.js · Node.js · NestJS**
 
-I’m a Full-Stack Software Engineer with **5+ years of experience** building web platforms, backend systems and real-time applications.
+I build **production-oriented web platforms, scalable APIs, event-driven systems and real-time applications**.
 
-My strongest area is the **TypeScript ecosystem** — from React and Next.js on the frontend to Express and NestJS on the backend — with a particular interest in **distributed systems, event-driven architecture and scalable APIs**.
+5+ years of professional experience across frontend and backend engineering, with a strong focus on the TypeScript ecosystem, distributed architecture and building systems that solve real business problems.
 
 ---
 
-## ⚡ What I Build
+### `01` — What I build
 
 ```text
-Modern Frontends
-        ↓
-     React / Next.js
-        ↓
-   TypeScript APIs
-        ↓
- Express / NestJS
-        ↓
- ┌───────────────┐
- │ Redis         │
- │ PostgreSQL    │
- │ Kafka         │
- │ RabbitMQ      │
- └───────────────┘
-        ↓
- Docker · CI/CD · AWS
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│  FRONTEND             BACKEND               INFRASTRUCTURE    │
+│                                                              │
+│  React                Node.js              Docker            │
+│  Next.js              Express              AWS               │
+│  TypeScript           NestJS               CI/CD              │
+│                       FastAPI                                 │
+│                                                              │
+│  ───────────────────────────────────────────────────────────  │
+│                                                              │
+│  ARCHITECTURE          DATA                  MESSAGING        │
+│                                                              │
+│  Microservices         PostgreSQL           Kafka             │
+│  Event-Driven          MongoDB              RabbitMQ          │
+│  REST APIs             Redis                                  │
+│  Distributed Systems   Prisma                                 │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
 ```
 
-I enjoy working on problems where the interesting part isn't just making something work, but figuring out:
-
-**How should it scale?**
-**What happens when traffic increases?**
-**Where should the state live?**
-**What should be synchronous vs event-driven?**
-**How do we keep the system maintainable?**
-
 ---
 
-## 🚀 Projects That Represent Me Best
+# `02` — Featured Work
 
-### 🛒 Vendora
+## 🛒 Vendora
 
-**Multi-vendor e-commerce platform**
+### Multi-vendor E-commerce Platform
 
-A production-oriented marketplace built as a large Nx-based application with multiple portals, backend services and asynchronous processing.
-
-**Built with**
-
-`Next.js` `React` `TypeScript` `Node.js` `Express` `Kafka` `Redis` `PostgreSQL` `Prisma` `Stripe` `TensorFlow` `Socket.IO` `Docker` `CI/CD`
-
-**Things I wanted to solve**
-
-* Multiple user experiences — customer, seller and admin
-* Event-driven analytics using Kafka
-* Product recommendations using TensorFlow
-* Redis-backed application state
-* Real-time user ↔ seller communication
-* Secure authentication and OTP verification
-* Payment processing with Stripe
-* Containerized builds and deployment
-
-→ **[Explore Vendora](https://github.com/AmarKajevic/Vendora-Multi-vendor-ecommerce-platform)**
-
----
-
-### 💬 Chatty
-
-**Real-Time Communication Platform**
-
-A real-time communication application built around WebSockets, Redis and event-driven user interactions.
-
-**Built with**
-
-`React` `TypeScript` `Node.js` `Express` `Socket.IO` `Redis` `MongoDB` `JWT` `Google AI` `Docker`
-
-**Things I wanted to solve**
-
-* Real-time messaging
-* Multi-session user presence
-* Typing indicators and read receipts
-* Instant notifications
-* Friend connections using Connect Codes
-* Secure authentication with HTTP-only cookies
-* AI-assisted conversations
-
-→ **[Explore Chatty](https://github.com/AmarKajevic/Chat-app-socket.io-)**
-→ **[Live Demo](https://chatty-ai-app.onrender.com/)**
-
----
-
-## 🧠 Engineering Experience
-
-A few numbers from my professional work:
-
-|                        |                                                    |
-| ---------------------- | -------------------------------------------------- |
-| **5+ years**           | Professional software development                  |
-| **10k+ products/hour** | Supplier catalog synchronization pipeline          |
-| **~40% faster**        | API response time after Redis caching optimization |
-| **Microservices**      | Backend architecture and distributed services      |
-| **Event-driven**       | Kafka and RabbitMQ based systems                   |
-| **Production**         | Docker, AWS and CI/CD                              |
-
-## The 10k+ product synchronization pipeline was built around supplier API integration and Kafka-based processing, while Redis caching work reduced API response times by approximately 40%.
-
-## 🛠️ My Toolbox
-
-**Languages**
-
-`TypeScript` `JavaScript` `Python` `C#` `SQL`
-
-**Frontend**
-
-`React` `Next.js` `Angular` `TailwindCSS`
-
-**Backend**
-
-`Node.js` `Express` `NestJS` `FastAPI` `.NET`
+A production-oriented marketplace designed around **multiple user portals, backend services and event-driven processing**.
 
 **Architecture**
 
-`Microservices` `Event-Driven Architecture` `Distributed Systems` `REST APIs`
+`Nx Monorepo` → `API Gateway` → `Domain Services` → `PostgreSQL / Redis / Kafka`
 
-**Data & Messaging**
+**Highlights**
 
-`PostgreSQL` `MySQL` `MongoDB` `Redis` `Kafka` `RabbitMQ`
+* Customer, seller and admin portals
+* Event-driven analytics with Kafka
+* TensorFlow-powered product recommendations
+* Redis-backed application state
+* Stripe payment integration
+* Real-time communication with Socket.IO
+* JWT + OTP authentication
+* ImageKit media management
+* Dockerized services
+* GitHub Actions + Docker Hub CI/CD
 
-**DevOps**
+**Stack**
 
-`Docker` `AWS` `CI/CD`
+`Next.js` `React` `TypeScript` `Node.js` `Express` `Kafka` `Redis` `PostgreSQL` `Prisma` `Stripe` `TensorFlow` `Socket.IO` `Docker`
 
-**Security & Integrations**
+**→ [View Repository](https://github.com/AmarKajevic/Vendora-Multi-vendor-ecommerce-platform)**
+
+---
+
+## 💬 Chatty
+
+### Real-Time Communication Platform
+
+A real-time communication system focused on **WebSockets, presence management, notifications and multi-session users**.
+
+**Architecture**
+
+`React` → `Node.js / Express` → `MongoDB + Redis`
+　　　　　　　　　　　↘ `Socket.IO`
+　　　　　　　　　　　↘ `Google AI`
+
+**Highlights**
+
+* Real-time messaging with Socket.IO
+* Multi-session presence tracking with Redis Sets
+* JWT authentication with HTTP-only cookies
+* Friend system and Connect Codes
+* Real-time notifications
+* Typing indicators
+* Read receipts
+* Google AI assistant
+* Dockerized development environment
+* Live production deployment
+
+**Stack**
+
+`React` `TypeScript` `Node.js` `Express` `Socket.IO` `Redis` `MongoDB` `JWT` `Google AI` `Docker`
+
+**→ [View Repository](https://github.com/AmarKajevic/Chat-app-socket.io-)**
+**→ [Live Demo](https://chatty-ai-app.onrender.com/)**
+
+---
+
+# `03` — Engineering Snapshot
+
+|                          |                                               |
+| ------------------------ | --------------------------------------------- |
+| **5+ years**             | Professional software engineering             |
+| **10k+ products/hour**   | Kafka-based supplier synchronization pipeline |
+| **~40% faster APIs**     | Redis caching optimization                    |
+| **Microservices**        | Distributed backend architectures             |
+| **Event-driven systems** | Kafka + RabbitMQ                              |
+| **Cloud & DevOps**       | Docker + AWS + CI/CD                          |
+
+---
+
+# `04` — How I Think
+
+I enjoy the engineering problems behind the product.
+
+**Scalability**
+Knowing when a simple solution is enough — and when it isn't.
+
+**Architecture**
+Breaking complex systems into clear, maintainable boundaries.
+
+**Performance**
+Caching, database optimization and efficient API design.
+
+**Reliability**
+Authentication, validation, observability and predictable deployments.
+
+**User Experience**
+Building interfaces that feel as good as the systems behind them.
+
+---
+
+# `05` — Core Stack
+
+### Frontend
+
+`TypeScript` `React` `Next.js` `Angular` `TailwindCSS`
+
+### Backend
+
+`Node.js` `Express` `NestJS` `FastAPI` `.NET`
+
+### Architecture
+
+`Microservices` `Event-Driven Architecture` `REST` `Distributed Systems`
+
+### Data
+
+`PostgreSQL` `MySQL` `MongoDB` `Redis`
+
+### Messaging
+
+`Kafka` `RabbitMQ`
+
+### Tools
+
+`Prisma` `Docker` `AWS` `CI/CD` `GitHub Actions`
+
+### Security & Integrations
 
 `JWT` `OAuth2` `Google Authentication` `Stripe` `Third-Party APIs`
 
 ---
 
-## 🎯 What I Care About
-
-I don't collect technologies just for the sake of collecting them.
-
-I care about:
-
-**Clean architecture**
-Codebases that remain understandable six months later.
-
-**Performance**
-Caching, database optimization and efficient APIs where they actually matter.
-
-**Scalability**
-Knowing when a simple solution is enough — and when it isn't.
-
-**Developer experience**
-Good project structure, validation, documentation, automation and predictable environments.
-
-**User experience**
-A technically impressive backend means little if the product itself feels slow or confusing.
-
----
-
-## 🔭 Currently
+# `06` — Currently
 
 Building and refining full-stack systems with:
 
-**TypeScript · React · Next.js · Node.js · NestJS · Redis · Kafka · Docker**
+**React · Next.js · TypeScript · Node.js · NestJS · Redis · Kafka · Docker**
 
-and continuously improving my understanding of **distributed systems and production architecture**.
+while deepening my knowledge of **distributed systems, backend architecture and production engineering**.
 
 ---
 
-## 🤝 Let's Connect
+# `07` — Let's Connect
 
-**LinkedIn:** [Amar Kajevic](https://www.linkedin.com/)
+🌍 **Open to Remote Opportunities**
 
-**Email:** [kajevic18@gmail.com](mailto:kajevic18@gmail.com)
+📧 **[kajevic18@gmail.com](mailto:kajevic18@gmail.com)**
 
-📍 Serbia · 🌍 Open to Remote Opportunities
+💼 **[LinkedIn](https://www.linkedin.com/)**
 
 ---
 
 <p align="center">
-  <i>Build it. Understand it. Make it scale.</i>
+
+### Build → Understand → Improve → Scale
+
 </p>
