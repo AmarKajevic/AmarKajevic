@@ -32,152 +32,143 @@ I build **production-oriented web platforms, scalable APIs, event-driven systems
 │  Distributed Systems   Prisma                                 │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
-```
+02 — Featured Work
+🛒 Vendora
+Multi-vendor E-commerce Platform
+A production-oriented marketplace designed around multiple user portals, ten backend services and event-driven processing.
 
----
+Architecture
 
-# `02` — Featured Work
+Nx + pnpm Monorepo → API Gateway → 10 Domain Services → MongoDB / Redis / Kafka
 
-## 🛒 Vendora
+Highlights
 
-### Multi-vendor E-commerce Platform
+Customer, seller and admin portals
+Event-driven analytics with Kafka
+TensorFlow.js-powered product recommendations
+Redis-backed application state
+Stripe payments with automated seller onboarding
+Real-time communication with Socket.IO
+JWT + OTP authentication with refresh tokens
+ImageKit media management
+Dockerized services
+GitHub Actions + Docker Hub CI/CD
+Stack
 
-A production-oriented marketplace designed around **multiple user portals, backend services and event-driven processing**.
+Next.js React TypeScript Node.js Express Kafka Redis MongoDB Prisma Stripe TensorFlow.js Socket.IO Docker
 
-**Architecture**
+→ View Repository
 
-`Nx Monorepo` → `API Gateway` → `Domain Services` → `MongoDB / Redis / Kafka`
+💬 Chatty
+Real-Time Communication Platform
+A real-time communication system focused on WebSockets, presence management, notifications and multi-session users.
 
-**Highlights**
+Architecture
 
-* Customer, seller and admin portals
-* Event-driven analytics with Kafka
-* TensorFlow-powered product recommendations
-* Redis-backed application state
-* Stripe payment integration
-* Real-time communication with Socket.IO
-* JWT + OTP authentication
-* ImageKit media management
-* Dockerized services
-* GitHub Actions + Docker Hub CI/CD
+React → Node.js / Express → MongoDB + Redis
+　　　　　　　　　　　↘ Socket.IO
+　　　　　　　　　　　↘ Google AI
 
-**Stack**
+Highlights
 
-`Next.js` `React` `TypeScript` `Node.js` `Express` `Kafka` `Redis` `PostgreSQL` `Prisma` `Stripe` `TensorFlow` `Socket.IO` `Docker`
+Real-time messaging with Socket.IO
+Multi-session presence tracking with Redis Sets
+JWT authentication with HTTP-only cookies
+Friend system and Connect Codes
+Real-time notifications
+Typing indicators
+Read receipts
+Google AI assistant
+Dockerized development environment
+Live production deployment
+Stack
 
-**→ [View Repository](https://github.com/AmarKajevic/Vendora-Multi-vendor-ecommerce-platform)**
+React TypeScript Node.js Express Socket.IO Redis MongoDB JWT Google AI Docker
 
----
+→ View Repository
+→ Live Demo
 
-## 💬 Chatty
+📄 DocAI
+Multi-Tenant AI Document Analysis SaaS
+A multi-tenant SaaS where every organization is an isolated workspace — with server-enforced authorization at every layer, never trusting client-supplied identity.
 
-### Real-Time Communication Platform
+Architecture
 
-A real-time communication system focused on **WebSockets, presence management, notifications and multi-session users**.
+Clerk (Auth + Orgs) → Next.js 16 App Router → Prisma / PostgreSQL
+　　　　　　　　　　　　　　　　↘ Google Gemini
+　　　　　　　　　　　　　　　　↘ Vercel Blob (private files)
 
-**Architecture**
+Highlights
 
-`React` → `Node.js / Express` → `MongoDB + Redis`
-　　　　　　　　　　　↘ `Socket.IO`
-　　　　　　　　　　　↘ `Google AI`
+Multi-tenant organization workspaces with role-based access (owner/member)
+Server-side membership verification on every API route
+Multi-format document analysis: text, PDF, Word, Markdown
+AI-powered summaries, Q&A, sentiment analysis and structured extraction via Gemini
+Signature-verified Clerk ⇄ Postgres webhook sync
+Authenticated file downloads — no public file exposure
+Monthly usage quotas enforced server-side
+Unit tests (Vitest) + E2E tests (Playwright) + GitHub Actions CI
+Stack
 
-**Highlights**
+Next.js 16 TypeScript Prisma PostgreSQL Clerk Google Gemini Vercel Blob Vitest Playwright
 
-* Real-time messaging with Socket.IO
-* Multi-session presence tracking with Redis Sets
-* JWT authentication with HTTP-only cookies
-* Friend system and Connect Codes
-* Real-time notifications
-* Typing indicators
-* Read receipts
-* Google AI assistant
-* Dockerized development environment
-* Live production deployment
+→ View Repository
+→ Live Demo
 
-**Stack**
-
-`React` `TypeScript` `Node.js` `Express` `Socket.IO` `Redis` `MongoDB` `JWT` `Google AI` `Docker`
-
-**→ [View Repository](https://github.com/AmarKajevic/Chat-app-socket.io-)**
-**→ [Live Demo](https://chatty-ai-app.onrender.com/)**
-
----
-
-# `03` — Engineering Snapshot
-
-|                          |                                               |
-| ------------------------ | --------------------------------------------- |
-| **5+ years**             | Professional software engineering             |
-| **10k+ products/hour**   | Kafka-based supplier synchronization pipeline |
-| **~40% faster APIs**     | Redis caching optimization                    |
-| **Microservices**        | Distributed backend architectures             |
-| **Event-driven systems** | Kafka + RabbitMQ                              |
-| **Cloud & DevOps**       | Docker + AWS + CI/CD                          |
-
----
-
-# `04` — How I Think
-
+03 — Engineering Snapshot
+5+ years	Professional software engineering
+10 backend services	Powering Vendora's marketplace architecture
+10k+ records/hour	Kafka-based supplier sync pipeline (enterprise e-commerce role)
+~40% faster APIs	Redis caching optimization (production systems)
+Microservices	Distributed backend architectures
+Event-driven systems	Kafka + RabbitMQ
+Cloud & DevOps	Docker + AWS + CI/CD
+04 — How I Think
 I enjoy the engineering problems behind the product.
 
-**Scalability**
+Scalability
 Knowing when a simple solution is enough — and when it isn't.
 
-**Architecture**
+Architecture
 Breaking complex systems into clear, maintainable boundaries.
 
-**Performance**
+Performance
 Caching, database optimization and efficient API design.
 
-**Reliability**
+Reliability
 Authentication, validation, observability and predictable deployments.
 
-**User Experience**
+User Experience
 Building interfaces that feel as good as the systems behind them.
 
----
+05 — Core Stack
+Frontend
+TypeScript React Next.js Angular TailwindCSS
 
-# `05` — Core Stack
+Backend
+Node.js Express NestJS FastAPI .NET
 
-### Frontend
+Architecture
+Microservices Event-Driven Architecture REST Distributed Systems
 
-`TypeScript` `React` `Next.js` `Angular` `TailwindCSS`
+Data
+PostgreSQL MySQL MongoDB Redis
 
-### Backend
+Messaging
+Kafka RabbitMQ
 
-`Node.js` `Express` `NestJS` `FastAPI` `.NET`
+Tools
+Prisma Docker AWS CI/CD GitHub Actions
 
-### Architecture
+Security & Integrations
+JWT OAuth2 Google Authentication Stripe Third-Party APIs
 
-`Microservices` `Event-Driven Architecture` `REST` `Distributed Systems`
-
-### Data
-
-`PostgreSQL` `MySQL` `MongoDB` `Redis`
-
-### Messaging
-
-`Kafka` `RabbitMQ`
-
-### Tools
-
-`Prisma` `Docker` `AWS` `CI/CD` `GitHub Actions`
-
-### Security & Integrations
-
-`JWT` `OAuth2` `Google Authentication` `Stripe` `Third-Party APIs`
-
----
-
-# `06` — Currently
-
+06 — Currently
 Building and refining full-stack systems with:
 
-**React · Next.js · TypeScript · Node.js · NestJS · Redis · Kafka · Docker**
+React · Next.js · TypeScript · Node.js · NestJS · Redis · Kafka · Docker
 
-while deepening my knowledge of **distributed systems, backend architecture and production engineering**.
-
----
+while deepening my knowledge of distributed systems, backend architecture and production engineering.
 
 # `07` — Let's Connect
 
@@ -187,10 +178,4 @@ while deepening my knowledge of **distributed systems, backend architecture and 
 
 💼 **[LinkedIn](https://www.linkedin.com/in/amar-k-0341a81b0/)**
 
----
-
-<p align="center">
-
-### Build → Understand → Improve → Scale
-
-</p>
+🔗 **[Portfolio](https://amar-kajevic.vercel.app/)**
