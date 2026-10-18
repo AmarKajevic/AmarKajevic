@@ -1,14 +1,14 @@
 <div align="center">
 
-# Amar Kajevic
+# Amar Kajević
 
 ### Full-Stack Software Engineer
 
 **TypeScript · React · Next.js · Node.js · NestJS**
 
-I build production-oriented web platforms, scalable APIs, event-driven systems and real-time applications.
+I design and build production-grade web platforms, event-driven backends and distributed systems — from pixel-perfect frontends to the infrastructure running underneath them.
 
-5+ years of professional experience across frontend and backend engineering, with a strong focus on the TypeScript ecosystem, distributed architecture and systems that solve real business problems.
+5+ years of professional experience across frontend and backend engineering, with a focus on the TypeScript ecosystem, distributed architecture, and systems built to survive real-world failure modes — not just demos.
 
 [![Email](https://img.shields.io/badge/Email-kajevic18%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:kajevic18@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Amar%20Kajevic-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amar-k-0341a81b0/)
@@ -30,6 +30,25 @@ I build production-oriented web platforms, scalable APIs, event-driven systems a
 ---
 
 ## Featured Work
+
+### 📬 Notifications Platform — Event-Driven Notification Infrastructure
+
+A multi-tenant notification delivery system built to demonstrate *operating* an event-driven architecture correctly — not just wiring brokers together.
+
+**Architecture:** `NestJS Gateway` → `Transactional Outbox` → `Outbox Relay` → `Kafka` → `Email / Webhook Workers`
+
+- Transactional outbox pattern: every notification request writes its row and outbox event in a single DB transaction, so the gateway never publishes directly on the request path and never loses events to a crash mid-flight
+- Outbox relay claims batches safely across multiple replicas with `FOR UPDATE SKIP LOCKED`, publishing to Kafka without double-delivery
+- Partitioned, replayable, per-key-ordered Kafka topics supporting independent consumer groups per channel
+- Automatic retry tracking with attempt counts and failure reasons per event
+- Nx monorepo with isolated, independently buildable packages (`gateway`, `libs/kafka`, `libs/contracts`, `libs/database`) so new workers plug in without duplicating logic
+- Designed for Kubernetes + KEDA autoscaling and Prometheus/Grafana observability as the system grows
+
+**Stack:** NestJS · TypeScript · Kafka · PostgreSQL (Supabase) · Prisma · Nx · Docker
+
+**[→ View Repository](https://github.com/AmarKajevic/Notifications-Platform)**
+
+<br>
 
 ### 🛒 Vendora — Multi-Vendor E-Commerce Platform
 
@@ -102,8 +121,8 @@ A multi-tenant SaaS where every organization is an isolated workspace, with serv
 | **10 backend services** | Powering Vendora's marketplace architecture |
 | **10k+ records/hour** | Kafka-based supplier sync pipeline (enterprise e-commerce role) |
 | **~40% faster APIs** | Redis caching optimization (production systems) |
+| **Transactional outbox + Kafka** | Event delivery with zero-loss guarantees (Notifications Platform) |
 | **Microservices** | Distributed backend architectures |
-| **Event-driven systems** | Kafka + RabbitMQ |
 | **Cloud & DevOps** | Docker + AWS + CI/CD |
 
 ---
@@ -114,8 +133,8 @@ I enjoy the engineering problems behind the product.
 
 - **Scalability** — knowing when a simple solution is enough, and when it isn't
 - **Architecture** — breaking complex systems into clear, maintainable boundaries
+- **Reliability** — outbox patterns, idempotency, retries and failure modes handled on purpose, not by accident
 - **Performance** — caching, database optimization and efficient API design
-- **Reliability** — authentication, validation, observability and predictable deployments
 - **User Experience** — building interfaces that feel as good as the systems behind them
 
 ---
@@ -131,12 +150,6 @@ I enjoy the engineering problems behind the product.
 | **Messaging** | Kafka · RabbitMQ |
 | **Tools** | Prisma · Docker · AWS · CI/CD · GitHub Actions |
 | **Security & Integrations** | JWT · OAuth2 · Google Authentication · Stripe · Third-Party APIs |
-
----
-
-## Currently
-
-Building and refining full-stack systems with **React · Next.js · TypeScript · Node.js · NestJS · Redis · Kafka · Docker**, while deepening my knowledge of distributed systems, backend architecture and production engineering.
 
 ---
 
